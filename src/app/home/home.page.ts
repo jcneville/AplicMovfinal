@@ -22,7 +22,7 @@ export class HomePage {
 
   constructor(private myBluetooth: BluetoothSerial, private aAlert: AlertController) { }
   
-  async onClickDiscover() {
+  async onClickBuscar() {
     this.estadoBluetooth = 1;
     try {
       let respuesta = this.myBluetooth.isEnabled();
